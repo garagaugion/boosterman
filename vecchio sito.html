@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#121212">
+<title>BOOSTERMAN - Elettrauto H24 Roma</title>
+<style>
+body{margin:0;background:#121212;color:#f5f5f5;font-family:Arial,sans-serif;padding-bottom:80px}
+.hero{min-height:90vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:60px 15px;background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.7)),url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070&auto=format&fit=crop') center/cover}
+h1{font-size:clamp(52px,10vw,110px);margin:0}
+.red{color:#b71c1c}
+.banner{display:inline-block;margin-top:20px;padding:12px 24px;border-radius:40px;background:rgba(0,0,0,.25);border:1px solid rgba(255,255,255,.15)}
+.section{max-width:1200px;margin:auto;padding:50px 15px}
+.card{background:#1c1c1c;border-radius:16px;padding:20px;box-shadow:0 8px 25px rgba(0,0,0,.25);margin:10px 0}
+.title{text-align:center;color:#b71c1c}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:15px}
+select,button{padding:15px;border:none;border-radius:12px;font-size:16px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.waBtn{background:#25d366;color:#fff;flex:1;font-weight:bold;cursor:pointer}
+.callBtn{background:#b71c1c;color:#fff;flex:1;text-decoration:none;display:flex;align-items:center;justify-content:center;font-weight:bold}
+details{background:#1c1c1c;padding:12px;border-radius:12px;margin:8px 0}
+summary{cursor:pointer;color:#b71c1c;font-weight:bold}
+.bar{position:fixed;bottom:0;left:0;right:0;display:flex}
+.bar a{flex:1;padding:16px;text-align:center;color:#fff;text-decoration:none;font-weight:bold}
+.call{background:#b71c1c}.wa{background:#25d366}
+@media(min-width:992px){.bar{display:none}}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div>
+<h1>BOOSTER<span class="red">MAN</span><br>ELETTRAUTO H24</h1>
+<p>Assistenza a domicilio per auto, SUV, furgoni e veicoli commerciali.</p>
+<div class="banner">🟢 OPERATIVI H24 • 7 GIORNI SU 7 • FESTIVI INCLUSI • ASSISTENZA IMMEDIATA VIA WHATSAPP</div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">Richiedi Intervento</h2>
+<div class="card">
+<select id="servizio" style="width:100%">
+<option>Avviamento Batteria</option>
+<option>Sostituzione Batteria</option>
+<option>Gomma Forata</option>
+<option>Apertura Porte</option>
+<option>Diagnosi Elettronica</option>
+</select>
+<br><br>
+<div class="btns">
+<button class="waBtn" onclick="inviaIntervento()">📍 Invia Intervento</button>
+<a class="callBtn" href="tel:+393270447124">📞 Chiama Ora</a>
+</div>
+<p>La posizione verrà richiesta automaticamente prima dell'invio.</p>
+<p>🚗 I tempi di arrivo possono variare in base al traffico e alla zona.</p>
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">I Nostri Servizi</h2>
+<div class="grid">
+<div class="card">🔋 Avviamento e sostituzione batterie</div>
+<div class="card">🛞 Assistenza gomma forata</div>
+<div class="card">🔓 Apertura porte auto</div>
+<div class="card">🖥️ Diagnosi elettronica</div>
+<div class="card">⚡ Problemi elettrici</div>
+<div class="card">🚐 Auto e furgoni</div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">Recensioni Clienti</h2>
+<div class="card">
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-50462b0d-2494-4224-bed1-fe0b046595b8"></div>
+</div>
+</section>
+
+<section class="section">
+<h2 class="title">FAQ</h2>
+<details><summary>Intervenite di notte?</summary>Sì, siamo operativi H24.</details>
+<details><summary>Intervenite nei festivi?</summary>Sì, anche nei festivi.</details>
+<details><summary>Quanto tempo impiegate?</summary>I tempi possono variare in base al traffico e alla zona.</details>
+</section>
+
+<section class="section">
+<h2 class="title">Guide Utili</h2>
+<div class="card"><b>Batteria scarica</b><br>Una batteria scarica può impedire l'avviamento del veicolo. Se il motore non parte o il quadro si accende debolmente, è consigliabile richiedere assistenza evitando tentativi ripetuti.</div>
+<div class="card"><b>Auto che non parte</b><br>Le cause possono essere batteria, alternatore o impianto elettrico.</div>
+<div class="card"><b>Gomma forata</b><br>Continuare a guidare con una gomma danneggiata può compromettere la sicurezza del veicolo.</div>
+</section>
+
+<div class="bar">
+<a class="call" href="tel:+393270447124">📞 CHIAMA ORA</a>
+<a class="wa" href="https://wa.me/393270447124">💬 WHATSAPP</a>
+</div>
+
+<script>
+function inviaIntervento(){
+ const servizio=document.getElementById("servizio").value;
+
+ if(!navigator.geolocation){
+   alert("Geolocalizzazione non supportata.");
+   return;
+ }
+
+ navigator.geolocation.getCurrentPosition(function(pos){
+   const lat=pos.coords.latitude;
+   const lon=pos.coords.longitude;
+   const maps="https://maps.google.com/?q="+lat+","+lon;
+
+   const testo=
+   "Richiesta intervento%0A%0A"+
+   "Servizio: "+servizio+"%0A%0A"+
+   "Posizione:%0A"+maps;
+
+   window.open("https://wa.me/393270447124?text="+testo,"_blank");
+ },function(){
+   alert("Per inviare l'intervento devi autorizzare la posizione.");
+ });
+}
+</script>
+
+</body>
+</html>

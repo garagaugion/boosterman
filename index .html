@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="it">
+<head><!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-862362843">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-862362843');
+</script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#0a0a0a" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="format-detection" content="telephone=yes" />
+<title>BOOSTERMAN — Elettrauto H24 a Roma | Batteria, Avviamento, Gomme</title>
+<meta name="description" content="Elettrauto H24 a Roma e provincia. Avviamento batteria, sostituzione batteria, gomma forata, apertura porte auto, diagnosi elettronica. Tecnico operativo 7 giorni su 7, tempo medio di arrivo 20-40 minuti." />
+<meta name="keywords" content="avviamento batteria Roma, avviamento batteria a domicilio, sostituzione batteria auto Roma, batteria scarica Roma, gomma forata Roma, gomma a terra Roma, soccorso stradale Roma, elettrauto H24 Roma, elettrauto a domicilio, pneumatici a domicilio, cambio gomme a domicilio, batteria auto a domicilio, avviamento auto SUV, avviamento furgoni Roma, batteria veicoli commerciali, assistenza auto GRA, soccorso GRA Grande Raccordo Anulare, soccorso aeroporto Fiumicino, soccorso aeroporto Ciampino, assistenza centri commerciali Roma, assistenza parcheggi Roma, assistenza uffici Roma, batteria scarica cosa fare, auto non parte Roma, pronto intervento auto Roma, meccanico a domicilio Roma, Boosterman Roma, batteria start stop Roma, AGM EFB batteria, ruotino di scorta Roma, riparazione pneumatici Roma, Roma e provincia auto" />
+<meta property="og:title" content="BOOSTERMAN — Elettrauto H24 a Roma" />
+<meta property="og:description" content="Elettrauto 24/7 a Roma. Avviamento batteria, sostituzione batteria, gomma forata. Tecnico operativo H24, tempo medio di arrivo 20-40 minuti." />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          display: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+          sans: ['Inter', 'system-ui', 'sans-serif'],
+        },
+        colors: {
+          ink:    '#0a0a0a',
+          carbon: '#111111',
+          steel:  '#1a1a1a',
+          ash:    '#2a2a2a',
+          bolt:   '#FFCC00',
+          boltSoft: '#FFE066',
+        },
+        boxShadow: {
+          glow: '0 0 0 1px rgba(255,204,0,.25), 0 20px 60px -20px rgba(255,204,0,.35)',
+          plate: '0 1px 0 rgba(255,255,255,.05) inset, 0 30px 60px -30px rgba(0,0,0,.8)',
+        },
+        keyframes: {
+          'pulse-ring': {
+            '0%':   { boxShadow: '0 0 0 0 rgba(34,197,94,.6)' },
+            '70%':  { boxShadow: '0 0 0 14px rgba(34,197,94,0)' },
+            '100%': { boxShadow: '0 0 0 0 rgba(34,197,94,0)' },
+          },
+          marquee: { '0%': { transform: 'translateX(0)' }, '100%': { transform: 'translateX(-50%)' } },
+          'rise':  { '0%': { opacity:0, transform:'translateY(14px)' }, '100%': { opacity:1, transform:'translateY(0)' } },
+        },
+        animation: {
+          'pulse-ring': 'pulse-ring 2s infinite',
+          'marquee': 'marquee 40s linear infinite',
+          'rise': 'rise .7s ease-out both',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  :root{
+    --bolt:#FFCC00;
+    --bolt-soft:#FFE066;
+    --sat: env(safe-area-inset-top, 0px);
+    --sab: env(safe-area-inset-bottom, 0px);
+  }
+  html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; text-size-adjust:100%; }
+  body{ font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; background:#0a0a0a; color:#f5f5f5; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; overflow-x:hidden; }
+  *{ -webkit-tap-highlight-color: rgba(255,204,0,.15); }
+  button, a{ touch-action: manipulation; }
+  img, svg{ max-width:100%; height:auto; }
+  .font-display{ font-family:'Space Grotesk',sans-serif; letter-spacing:-0.02em; }
+
+  /* Grid background */
+  .grid-bg{
+    background-image:
+      linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px);
+    background-size: 56px 56px;
+  }
+  .radial-spot{
+    background:
+      radial-gradient(60% 50% at 80% 20%, rgba(255,204,0,.18), transparent 60%),
+      radial-gradient(50% 60% at 10% 90%, rgba(255,204,0,.08), transparent 60%);
+  }
+  .text-stroke{
+    -webkit-text-stroke: 1px rgba(255,255,255,.18);
+    color: transparent;
+  }
+  .chev{ transition: transform .25s ease; display:inline-block; }
+  .rot-180{ transform: rotate(180deg); }
+
+  /* Accordion */
+  details > summary{ list-style:none; cursor:pointer; }
+  details > summary::-webkit-details-marker{ display:none; }
+  details[open] .chev{ transform: rotate(180deg); }
+  details .ans{
+    max-height:0; overflow:hidden; transition:max-height .35s ease, padding .35s ease;
+  }
+  details[open] .ans{ max-height:600px; padding-top:.75rem; }
+
+  /* Marquee track */
+  .marquee-track{ display:flex; width:max-content; }
+
+  /* Card hover lift */
+  .lift{ transition: transform .35s ease, border-color .35s ease, background .35s ease; }
+  .lift:hover{ transform: translateY(-4px); border-color: rgba(255,204,0,.5); }
+
+  /* Service pill */
+  .pill{ transition: all .25s ease; }
+
+  /* Custom scrollbar for dropdown */
+  .nice-scroll::-webkit-scrollbar{ width:6px; }
+  .nice-scroll::-webkit-scrollbar-thumb{ background:#333; border-radius:3px; }
+
+  /* Live dot */
+  .live-dot{ width:10px; height:10px; border-radius:9999px; background:#22c55e; display:inline-block; animation: pulse-ring 2s infinite; }
+</style>
+</head>
+<body class="bg-ink text-white">
+
+<!-- Top utility bar -->
+<div class="bg-bolt text-ink text-xs font-semibold">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-9 flex items-center justify-between gap-4">
+    <div class="flex items-center gap-2">
+      <span class="live-dot"></span>
+      <span class="uppercase tracking-wider">Operativi adesso · Roma e provincia</span>
+    </div>
+    <div class="hidden sm:flex items-center gap-5">
+      <a href="tel:+393270447124" class="hover:underline">📞 327 044 7124</a>
+      <span class="opacity-70">Tempo medio: 20-40 min</span>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 backdrop-blur bg-ink/80 border-b border-white/5">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+    <a href="#home" class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-bolt text-ink grid place-items-center font-black text-xl shadow-glow">⚡</div>
+      <div class="leading-tight">
+        <div class="font-display font-bold text-lg tracking-tight">
+          <span class="text-bolt">BOOSTER</span><span class="text-white">MAN</span>
+        </div>
+        <div class="text-[10px] uppercase tracking-[0.2em] text-white/50">Elettrauto H24 · Roma</div>
+      </div>
+    </a>
+    <div class="hidden lg:flex items-center gap-8 text-sm">
+      <a href="#servizi" class="text-white/70 hover:text-bolt transition">Servizi</a>
+      <a href="#zone" class="text-white/70 hover:text-bolt transition">Zone</a>
+      <a href="#marchi" class="text-white/70 hover:text-bolt transition">Marchi</a>
+      <a href="#faq" class="text-white/70 hover:text-bolt transition">FAQ</a>
+      <a href="#guide" class="text-white/70 hover:text-bolt transition">Guide</a>
+    </div>
+    <div class="flex items-center gap-2">
+      <a href="tel:+393270447124" class="hidden sm:inline-flex items-center gap-2 bg-bolt text-ink font-semibold text-sm px-4 py-2.5 rounded-lg hover:bg-boltSoft transition">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+        Chiama ora
+      </a>
+      <button id="mobileBtn" class="lg:hidden w-10 h-10 grid place-items-center rounded-lg border border-white/10">
+        <svg id="menuIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="hidden lg:hidden border-t border-white/5 bg-ink">
+    <div class="px-6 py-4 space-y-2 text-sm">
+      <a href="#servizi" class="block py-2 text-white/80">Servizi</a>
+      <a href="#zone" class="block py-2 text-white/80">Zone</a>
+      <a href="#marchi" class="block py-2 text-white/80">Marchi</a>
+      <a href="#faq" class="block py-2 text-white/80">FAQ</a>
+      <a href="#guide" class="block py-2 text-white/80">Guide</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-40"></div>
+  <div class="absolute inset-0 radial-spot"></div>
+  <div class="absolute -top-40 -right-40 w-[600px] h-[600px] bg-bolt/20 rounded-full blur-[120px]"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-24 lg:pt-24 lg:pb-32">
+    <div class="grid lg:grid-cols-[1.1fr_.9fr] gap-12 items-center">
+      <!-- Left -->
+      <div class="animate-rise">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-white/80 mb-6">
+          <span class="live-dot"></span>
+          Interventi rapidi attivi · 24/7
+        </div>
+        <h1 class="font-display font-bold text-5xl sm:text-6xl lg:text-7xl leading-[0.95] mb-6">
+          Un guasto.<br>
+          <span class="text-bolt">Una chiamata.</span><br>
+          <span class="text-stroke">Elettrauto H24 7/7</span>
+        </h1>
+        <p class="text-lg text-white/70 max-w-xl mb-6 leading-relaxed">
+          Avviamento Batteria, Sostituzione Batteria (anche a domicilio) e gomma forata a domicilio. Auto, SUV, Furgoni.
+        </p>
+        <p class="text-base text-white/60 max-w-xl mb-6 leading-relaxed">
+          Gli interventi si eseguono per strada, uffici, parcheggi, aeroporti, centri commerciali e GRA (Grande Raccordo Anulare).
+        </p>
+
+        <!-- Servizi principali -->
+        <div class="flex flex-wrap gap-2 mb-6">
+          <span class="inline-flex items-center gap-1.5 bg-bolt/10 border border-bolt/30 text-bolt text-sm font-medium px-3 py-1.5 rounded-full">🔋 Avviamento Auto</span>
+          <span class="inline-flex items-center gap-1.5 bg-bolt/10 border border-bolt/30 text-bolt text-sm font-medium px-3 py-1.5 rounded-full">🔋 Sostituzione Batteria</span>
+          <span class="inline-flex items-center gap-1.5 bg-bolt/10 border border-bolt/30 text-bolt text-sm font-medium px-3 py-1.5 rounded-full">🛞 Assistenza Gomma Forata</span>
+          <span class="inline-flex items-center gap-1.5 bg-bolt/10 border border-bolt/30 text-bolt text-sm font-medium px-3 py-1.5 rounded-full">⚡ Diagnosi Elettrica Rapida</span>
+          <span class="inline-flex items-center gap-1.5 bg-bolt/10 border border-bolt/30 text-bolt text-sm font-medium px-3 py-1.5 rounded-full">🚗 Apertura Porte Auto</span>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3 mb-10">
+          <a href="https://wa.me/393270447124?text=Ciao%2C%20ho%20bisogno%20di%20un%20intervento%20Boosterman." target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-bolt text-ink font-semibold px-6 py-4 rounded-xl shadow-glow hover:bg-boltSoft transition">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+            Richiedi intervento
+          </a>
+          <a href="tel:+393270447124" class="inline-flex items-center gap-2 border border-white/15 hover:border-bolt hover:text-bolt px-6 py-4 rounded-xl font-semibold transition">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+            327 044 7124
+          </a>
+        </div>
+
+        <!-- Stats strip -->
+        <div class="grid grid-cols-3 gap-6 pt-8 border-t border-white/10 max-w-xl">
+          <div>
+            <div class="font-display text-3xl font-bold text-bolt">20-40′</div>
+            <div class="text-xs text-white/60 mt-1 uppercase tracking-wider">Tempo medio</div>
+          </div>
+          <div>
+            <div class="font-display text-3xl font-bold text-bolt">24/7</div>
+            <div class="text-xs text-white/60 mt-1 uppercase tracking-wider">Sempre attivi</div>
+          </div>
+          <div>
+            <div class="font-display text-3xl font-bold text-bolt">10+</div>
+            <div class="text-xs text-white/60 mt-1 uppercase tracking-wider">Anni a Roma</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: request card -->
+      <div id="richiesta" class="relative animate-rise" style="animation-delay:.15s">
+        <div class="absolute -inset-px bg-gradient-to-br from-bolt/40 via-transparent to-transparent rounded-2xl blur-lg opacity-60"></div>
+        <div class="relative bg-carbon/90 backdrop-blur border border-white/10 rounded-2xl p-6 sm:p-8 shadow-plate">
+          <div class="flex items-center justify-between mb-6">
+            <div>
+              <div class="text-xs uppercase tracking-[0.2em] text-bolt mb-1">Pronto intervento</div>
+              <h3 class="font-display text-2xl font-bold">Richiedi assistenza</h3>
+            </div>
+            <div class="flex items-center gap-2 text-xs text-white/60">
+              <span class="live-dot"></span> Live
+            </div>
+          </div>
+
+          <label class="block text-xs uppercase tracking-wider text-white/60 mb-2">Tipo di intervento</label>
+          <div class="relative mb-4">
+            <button id="ddBtn" class="w-full bg-ink border border-white/10 hover:border-bolt/50 text-left px-4 py-3.5 rounded-xl font-semibold flex items-center justify-between transition">
+              <span id="ddLabel" class="text-white">Avviamento Batteria</span>
+              <span class="flex items-center gap-3">
+                <span id="ddPrice" class="text-bolt text-sm">da 30€</span>
+                <svg id="ddChev" class="chev text-white/60" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </span>
+            </button>
+            <div id="ddMenu" class="hidden nice-scroll absolute top-full left-0 right-0 mt-2 bg-carbon border border-white/10 rounded-xl z-20 max-h-72 overflow-y-auto shadow-2xl"></div>
+          </div>
+
+          <div id="locErr" class="hidden bg-red-500/10 border border-red-400/30 text-red-200 p-3 rounded-lg text-sm mb-3"></div>
+          <div id="locOk"  class="hidden bg-green-500/10 border border-green-400/30 text-green-200 p-3 rounded-lg text-sm mb-3"></div>
+
+          <div class="grid grid-cols-2 gap-3 mb-4">
+            <button id="sendBtn" class="group bg-green-600 hover:bg-green-500 text-white font-semibold py-4 px-4 rounded-xl flex items-center justify-center gap-3 transition">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+              <div class="text-left leading-tight">
+                <div class="text-xs uppercase tracking-wider opacity-80">Invia via</div>
+                <div class="font-bold">WhatsApp</div>
+              </div>
+            </button>
+            <a href="tel:+393270447124" class="bg-bolt hover:bg-boltSoft text-ink font-semibold py-4 px-4 rounded-xl flex items-center justify-center gap-3 transition">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+              <div class="text-left leading-tight">
+                <div class="text-xs uppercase tracking-wider opacity-70">Chiama</div>
+                <div class="font-bold">327 044 7124</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="flex items-start gap-2 text-xs text-white/60 mb-2">
+            <span class="mt-0.5">📍</span>
+            <span>Inviando la tua posizione su WhatsApp potremo stimare più rapidamente il tempo di intervento.</span>
+          </div>
+          <div class="flex items-start gap-2 text-xs text-white/50">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 flex-shrink-0"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Verrà richiesto l'accesso alla tua posizione per allegarla automaticamente al messaggio WhatsApp.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Marquee strip -->
+<div class="bg-bolt text-ink py-4 overflow-hidden border-y border-bolt/50">
+  <div class="marquee-track animate-marquee whitespace-nowrap font-display font-semibold text-lg">
+    <span class="px-8">⚡ ASSISTENZA H24</span><span class="px-8">●</span>
+    <span class="px-8">7 GIORNI SU 7</span><span class="px-8">●</span>
+    <span class="px-8">FESTIVI INCLUSI</span><span class="px-8">●</span>
+    <span class="px-8">INTERVENTO A DOMICILIO</span><span class="px-8">●</span>
+    <span class="px-8">AUTO · SUV · FURGONI</span><span class="px-8">●</span>
+    <span class="px-8">⚡ ASSISTENZA H24</span><span class="px-8">●</span>
+    <span class="px-8">7 GIORNI SU 7</span><span class="px-8">●</span>
+    <span class="px-8">FESTIVI INCLUSI</span><span class="px-8">●</span>
+    <span class="px-8">INTERVENTO A DOMICILIO</span><span class="px-8">●</span>
+    <span class="px-8">AUTO · SUV · FURGONI</span><span class="px-8">●</span>
+  </div>
+</div>
+
+<!-- SERVIZI -->
+<section id="servizi" class="py-24 px-4 relative">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex items-end justify-between gap-8 mb-12 flex-wrap">
+      <div>
+        <div class="text-xs uppercase tracking-[0.25em] text-bolt mb-3">— Cosa facciamo</div>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold">I nostri interventi</h2>
+      </div>
+      <p class="text-white/60 max-w-md">Avviamento batteria, sostituzione batteria e gomma forata a domicilio. Otto interventi rapidi, con prezzi chiari. Quello che ti serve, quando ti serve.</p>
+    </div>
+
+    <div id="servicesGrid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"></div>
+  </div>
+</section>
+
+<!-- STATO OPERATIVO -->
+<section class="py-24 px-4 bg-carbon border-y border-white/5">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-14">
+      <div class="text-xs uppercase tracking-[0.25em] text-bolt mb-3">— In tempo reale</div>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold">Stato operativo</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="bg-ink border border-white/10 rounded-2xl p-6 lift">
+        <div class="flex items-center gap-2 mb-4"><span class="live-dot"></span><span class="text-xs uppercase tracking-wider text-green-400">Online</span></div>
+        <div class="font-display text-3xl font-bold">Centrale attiva</div>
+        <div class="text-white/50 text-sm mt-1">contatto diretto col tecnico</div>
+      </div>
+      <div class="bg-ink border border-white/10 rounded-2xl p-6 lift">
+        <div class="text-xs uppercase tracking-wider text-bolt mb-4">🚗 Elettrauto H24 7/7</div>
+        <div class="font-display text-4xl font-bold">Operativo</div>
+        <div class="text-white/50 text-sm mt-1">disponibile 7 giorni su 7</div>
+      </div>
+      <div class="bg-ink border border-white/10 rounded-2xl p-6 lift">
+        <div class="text-xs uppercase tracking-wider text-bolt mb-4">⏱ Tempo medio di arrivo</div>
+        <div class="font-display text-4xl font-bold">20-40 <span class="text-2xl">min</span></div>
+        <div class="text-white/50 text-sm mt-1">📍 variabile in base alla zona di Roma e alle condizioni del traffico</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PERCHÉ -->
+<section class="py-24 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-14">
+      <div class="text-xs uppercase tracking-[0.25em] text-bolt mb-3">— Perché sceglierci</div>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold">Il modo BOOSTERMAN</h2>
+    </div>
+    <div id="whyGrid" class="grid grid-cols-2 lg:grid-cols-4 gap-4"></div>
+  </div>
+</section>
+
+<!-- MARCHI -->
+<section id="marchi" class="py-20 px-4 bg-carbon border-y border-white/5">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-12">
+      <div class="text-xs uppercase tracking-[0.25em] text-bolt mb-3">— Compatibilità</div>
+      <h2 class="font-display text-4xl sm:text-5xl font-bold">Marchi supportati</h2>
+      <p class="text-white/60 mt-3">Interveniamo su tutte le principali case automobilistiche.</p>
+    </div>
+    <div id="brandsGrid" class="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-3"></div>
+  </div>
+</section>
+
+<!-- ZONE -->
+<section id="zone" class="py-24 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid lg:grid-cols-[1fr_1.4fr] gap-12 items-start">
+      <div class="lg:sticky lg:top-32">
+        <div class="text-xs uppercase tracking-[0.25em] text-bolt mb-3">— Copertura</div>
+        <h2 class="font-display text-4xl sm:text-5xl font-bold mb-4">Dove<br>interveniamo</h2>
+        <p class="text-white/60 mb-6">Roma e provincia. Dal centro al GRA, fino agli aeroporti di Fiumicino e Ciampino.</p>
+        <a href="https://wa.me/393270447124?text=Ciao%2C%20ho%20bisogno%20di%20un%20intervento%20Boosterman." target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-bolt font-semibold hover:gap-3 transition-all">
+          Richiedi intervento
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <div id="zonesGrid" class="grid sm:grid-cols-2 gap-3"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ + GUIDE in two columns -->
+<section id="faq" class="py-24 px-4 bg-carbon border-y border-white/5">
+  <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12">
+    <div>
+      <div class="text-xs uppercase tracking-[0.25em] text-bolt mb-3">— FAQ</div>
+      <h2 class="font-display text-4xl font-bold mb-8">Domande frequenti</h2>
+      <div id="faqList" class="space-y-3"></div>
+    </div>
+    <div id="guide">
+      <div class="text-xs uppercase tracking-[0.25em] text-bolt mb-3">— Guide</div>
+      <h2 class="font-display text-4xl font-bold mb-8">Cosa fare se…</h2>
+      <div id="guidesList" class="space-y-3"></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA FINALE -->
+<section class="py-24 px-4 relative overflow-hidden">
+  <div class="absolute inset-0 grid-bg opacity-30"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-bolt/10 via-transparent to-transparent"></div>
+  <div class="relative max-w-4xl mx-auto text-center">
+    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-white/80 mb-6">
+      <span class="live-dot"></span> Disponibili adesso
+    </div>
+    <h2 class="font-display text-4xl sm:text-6xl font-bold leading-tight mb-6">
+      In panne?<br>
+      <span class="text-bolt">Contattaci ora.</span>
+    </h2>
+    <p class="text-lg text-white/70 max-w-2xl mx-auto mb-10">
+      Contattaci ora e ricevi immediatamente una stima reale del tempo di arrivo. Un tecnico specializzato si metterà subito in viaggio.
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-3">
+      <a href="tel:+393270447124" class="inline-flex items-center gap-2 bg-bolt text-ink font-semibold px-7 py-4 rounded-xl shadow-glow hover:bg-boltSoft transition">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+        Chiama 327 044 7124
+      </a>
+      <a href="https://wa.me/393270447124?text=Ciao%2C%20ho%20bisogno%20di%20un%20intervento%20Boosterman." target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-white/15 hover:border-bolt hover:text-bolt px-7 py-4 rounded-xl font-semibold transition">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg>
+        Scrivi su WhatsApp
+      </a>
+    </div>
+    <p class="mt-6 text-sm text-white/60 max-w-xl mx-auto">
+      📍 Inviando la tua posizione su WhatsApp potremo stimare più rapidamente il tempo di intervento.
+    </p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contatti" class="bg-ink border-t border-white/5 pt-16 pb-8 px-4">
+  <div class="max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-4 gap-10 mb-12">
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-bolt text-ink grid place-items-center font-black text-xl">⚡</div>
+          <div class="leading-tight">
+            <div class="font-display font-bold text-lg"><span class="text-bolt">BOOSTER</span>MAN</div>
+            <div class="text-[10px] uppercase tracking-[0.2em] text-white/50">Elettrauto H24 · Roma</div>
+          </div>
+        </div>
+        <p class="text-sm text-white/60 leading-relaxed">
+          Elettrauto a domicilio. Avviamento batteria, sostituzione batteria e gomma forata. 24 ore al giorno, 7 giorni su 7, a Roma e provincia.
+        </p>
+      </div>
+      <div>
+        <h3 class="font-display font-semibold text-white mb-4 text-sm uppercase tracking-wider">Navigazione</h3>
+        <ul class="space-y-2.5 text-sm text-white/60">
+          <li><a href="#home" class="hover:text-bolt transition">Home</a></li>
+          <li><a href="#servizi" class="hover:text-bolt transition">Servizi</a></li>
+          <li><a href="#zone" class="hover:text-bolt transition">Zone operative</a></li>
+          <li><a href="#faq" class="hover:text-bolt transition">FAQ</a></li>
+          <li><a href="#guide" class="hover:text-bolt transition">Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-display font-semibold text-white mb-4 text-sm uppercase tracking-wider">Servizi</h3>
+        <ul class="space-y-2.5 text-sm text-white/60">
+          <li><a href="#servizi" class="hover:text-bolt transition">Avviamento batteria</a></li>
+          <li><a href="#servizi" class="hover:text-bolt transition">Sostituzione batteria</a></li>
+          <li><a href="#servizi" class="hover:text-bolt transition">Gomma forata</a></li>
+          <li><a href="#servizi" class="hover:text-bolt transition">Apertura porte auto</a></li>
+          <li><a href="#servizi" class="hover:text-bolt transition">Diagnosi elettronica</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-display font-semibold text-white mb-4 text-sm uppercase tracking-wider">Contatti</h3>
+        <ul class="space-y-2.5 text-sm text-white/70">
+          <li><a href="tel:+393270447124" class="flex items-center gap-2 hover:text-bolt transition"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg> 327 044 7124</a></li>
+          <li><a href="https://wa.me/393270447124" target="_blank" class="flex items-center gap-2 hover:text-bolt transition"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654z"/></svg> WhatsApp H24</a></li>
+          <li class="flex items-center gap-2 text-white/60"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Roma e provincia</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
+      <p>© 2025 BOOSTERMAN — Elettrauto H24 Roma. Tutti i diritti riservati. · P.IVA 12345678901</p>
+      <div class="flex items-center gap-5">
+        <a href="#" class="hover:text-bolt transition">Privacy Policy</a>
+        <a href="#" class="hover:text-bolt transition">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/393270447124" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp" class="fixed z-40 w-14 h-14 rounded-full bg-green-500 hover:bg-green-400 grid place-items-center shadow-2xl shadow-green-500/30 transition hover:scale-110" style="bottom:calc(1.5rem + env(safe-area-inset-bottom)); right:calc(1.5rem + env(safe-area-inset-right));">
+  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/></svg>
+</a>
+
+<script>
+// Inline SVG icon strings
+const ico = {
+  battery: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="16" height="12" rx="2"/><line x1="22" y1="11" x2="22" y2="13"/><line x1="6" y1="10" x2="6" y2="14"/><line x1="10" y1="10" x2="10" y2="14"/></svg>',
+  bolt: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
+  tire: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="8"/><line x1="12" y1="16" x2="12" y2="22"/><line x1="2" y1="12" x2="8" y2="12"/><line x1="16" y1="12" x2="22" y2="12"/></svg>',
+  key: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>',
+  cpu: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="15" y1="2" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/><line x1="15" y1="20" x2="15" y2="22"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="20" y1="14" x2="22" y2="14"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="2" y1="14" x2="4" y2="14"/></svg>',
+  lamp: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.7.6 1 1.5 1 2.3v1h6v-1c0-.8.3-1.7 1-2.3A7 7 0 0 0 12 2z"/></svg>',
+  wire: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12V6a2 2 0 0 1 2-2h2M5 12a3 3 0 0 0 6 0V8m-6 4h6m8 0V6a2 2 0 0 0-2-2h-2m4 8a3 3 0 0 1-6 0V8"/></svg>',
+  truck: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>',
+  clock: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+  cal: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
+  home: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
+  map: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+  chat: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>',
+  shield: '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+};
+
+const services = [
+  { name: 'Avviamento Batteria', price: 'da 30€', icon: ico.battery, emoji: '🔋⚡🚗', tag: 'BATTERIA SCARICA', desc: 'Jump start sul posto in pochi minuti.', highlight: true },
+  { name: 'Sostituzione Batteria', price: 'da 50€ + batteria', icon: ico.bolt, emoji: '🔋🔧🆕', tag: 'CAMBIO BATTERIA', desc: 'Batterie di qualità sempre a bordo.', highlight: true },
+  { name: 'Gomma Forata', price: 'da 40€', icon: ico.tire, emoji: '🛞💥🔧', tag: 'GOMMA A TERRA', desc: 'Sostituzione rapida e sicura.', highlight: true },
+  { name: 'Apertura Porte Auto', price: 'da 50€', icon: ico.key, emoji: '🔑🚪🚗', tag: 'CHIAVI BLOCCATE', desc: 'Apertura senza danni al veicolo.' },
+  { name: 'Diagnosi Elettronica', price: 'da 40€', icon: ico.cpu, emoji: '⚠️💻🔍', tag: 'SPIA ACCESA', desc: 'Lettura errori e check completo.' },
+  { name: 'Sostituzione Lampadine', price: 'da 20€', icon: ico.lamp, emoji: '💡🔧🚗', tag: 'LUCE BRUCIATA', desc: 'Anabbaglianti, abbaglianti, stop.' },
+  { name: 'Problemi Elettrici', price: 'Su preventivo', icon: ico.wire, emoji: '⚡🔌⚠️', tag: 'GUASTO ELETTRICO', desc: 'Diagnosi e riparazione impianti.' },
+  { name: 'Auto e Furgoni', price: 'Su preventivo', icon: ico.truck, emoji: '🚐🔧🛠️', tag: 'VEICOLO COMMERCIALE', desc: 'Anche veicoli commerciali.' },
+];
+
+const whyItems = [
+  { icon: ico.clock,  title: 'Assistenza H24',      desc: 'Operativi 24 ore su 24, ogni giorno.' },
+  { icon: ico.cal,    title: 'Festivi inclusi',     desc: 'Lavoriamo anche domeniche e festività.' },
+  { icon: ico.home,   title: 'A domicilio',         desc: 'Veniamo noi da te, ovunque tu sia.' },
+  { icon: ico.truck,  title: 'Auto e furgoni',      desc: 'Veicoli leggeri e commerciali.' },
+  { icon: ico.cpu,    title: 'Diagnosi elettronica',desc: 'Strumenti professionali a bordo.' },
+  { icon: ico.map,    title: 'Tutta Roma',          desc: 'Centro, GRA, Fiumicino, Ciampino.' },
+  { icon: ico.chat,   title: 'WhatsApp diretto',    desc: 'Posizione GPS in un tap.' },
+  { icon: ico.shield, title: 'Tecnico qualificato', desc: 'Esperienza e affidabilità.' },
+];
+
+const brands = ['BMW','Audi','Mercedes','Volkswagen','Fiat','Ford','Toyota','Peugeot','Renault','Nissan','Jeep','Citroën'];
+const zones = ['Roma Nord','Roma Sud','Roma Est','Roma Ovest','Roma Centro','Grande Raccordo Anulare','Fiumicino','Ciampino','Aeroporto Fiumicino','Aeroporto Ciampino','Castelli Romani','EUR · Garbatella'];
+
+const faqs = [
+  { q: 'Intervenite di notte?',      a: 'Sì, siamo operativi 24 ore su 24, 7 giorni su 7. Nessun sovrapprezzo nascosto.' },
+  { q: 'Intervenite nei festivi?',   a: 'Sì, anche la domenica e in tutti i giorni festivi.' },
+  { q: 'Quanto tempo impiegate?',    a: 'Il tempo medio di arrivo è di 20-40 minuti, variabile in base alla zona di Roma e alle condizioni del traffico. Contattaci per ricevere una stima reale al momento.' },
+  { q: 'Intervenite anche su furgoni?', a: 'Sì, assistiamo auto, SUV, furgoni e veicoli commerciali.' },
+  { q: 'Come pago?',                 a: 'Accettiamo contanti, carte di credito/debito e pagamenti contactless direttamente sul posto.' },
+  { q: 'Rilasciate fattura?',        a: 'Sì, emettiamo regolare fattura o ricevuta fiscale al termine dell\'intervento.' },
+];
+
+const guides = [
+  { title: 'Batteria scarica',        content: 'Non insistere con l\'avviamento: rischi di danneggiare il motorino. Chiamaci, arriviamo con il booster e, se serve, una batteria nuova.' },
+  { title: 'Auto che non parte',      content: 'Può essere batteria, alternatore o motorino di avviamento. Facciamo diagnosi sul posto e risolviamo nella maggior parte dei casi.' },
+  { title: 'Pneumatico forato',       content: 'Sposta l\'auto in sicurezza, accendi le quattro frecce. Arriviamo con attrezzi professionali per la sostituzione rapida.' },
+  { title: 'Chiavi chiuse in auto',   content: 'Non forzare la portiera: rischi danni costosi. Abbiamo strumenti per l\'apertura non distruttiva.' },
+  { title: 'Lampadina bruciata',        content: 'Molti modelli richiedono lo smontaggio di parti per il cambio. Lo facciamo in pochi minuti e ripartiamo in regola.' },
+  { title: 'Spia motore accesa',      content: 'Colleghiamo lo strumento di diagnosi OBD per leggere i codici errore e capire subito il problema.' },
+];
+
+// Render services
+const hlCls = 'border-bolt/40 bg-bolt/5';
+document.getElementById('servicesGrid').innerHTML = services.map(s => `
+  <div class="group bg-carbon border ${s.highlight ? 'border-bolt/40 bg-bolt/[0.03]' : 'border-white/10'} rounded-2xl p-6 lift">
+    <div class="w-11 h-11 rounded-xl bg-bolt/10 text-bolt grid place-items-center mb-5 group-hover:bg-bolt group-hover:text-ink transition">${s.icon}</div>
+    <div class="flex items-center gap-2 mb-1">
+      <h3 class="font-display font-semibold text-lg">${s.name}</h3>
+      ${s.highlight ? '<span class="text-[10px] uppercase tracking-wider bg-bolt text-ink font-bold px-1.5 py-0.5 rounded">Top</span>' : ''}
+    </div>
+    <p class="text-sm text-white/55 mb-4">${s.desc}</p>
+    <div class="flex items-center justify-between pt-4 border-t border-white/5">
+      <span class="text-bolt text-sm font-semibold">${s.price}</span>
+      <span class="text-white/40 text-xs uppercase tracking-wider group-hover:text-bolt transition">Richiedi →</span>
+    </div>
+  </div>
+`).join('');
+
+// Why grid
+document.getElementById('whyGrid').innerHTML = whyItems.map(i => `
+  <div class="bg-carbon border border-white/10 rounded-2xl p-6 lift">
+    <div class="w-11 h-11 rounded-xl bg-bolt/10 text-bolt grid place-items-center mb-5">${i.icon}</div>
+    <div class="font-display font-semibold text-base mb-1">${i.title}</div>
+    <p class="text-sm text-white/55">${i.desc}</p>
+  </div>
+`).join('');
+
+// Brands
+document.getElementById('brandsGrid').innerHTML = brands.map(b => `
+  <div class="bg-ink border border-white/10 rounded-xl py-6 grid place-items-center lift">
+    <span class="font-display font-bold text-white/70 text-lg tracking-wide group-hover:text-bolt">${b}</span>
+  </div>
+`).join('');
+
+// Zones
+document.getElementById('zonesGrid').innerHTML = zones.map(z => `
+  <div class="bg-carbon border border-white/10 rounded-xl px-5 py-4 flex items-center gap-3 lift">
+    <div class="w-8 h-8 rounded-lg bg-bolt/10 text-bolt grid place-items-center flex-shrink-0">${ico.map}</div>
+    <span class="font-medium text-white/90">${z}</span>
+  </div>
+`).join('');
+
+// FAQ as <details>
+document.getElementById('faqList').innerHTML = faqs.map(f => `
+  <details class="bg-ink border border-white/10 rounded-xl p-5 hover:border-white/20 transition">
+    <summary class="flex items-center justify-between gap-4">
+      <span class="font-display font-semibold text-white">${f.q}</span>
+      <svg class="chev text-bolt flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+    </summary>
+    <div class="ans text-white/70 text-sm leading-relaxed">${f.a}</div>
+  </details>
+`).join('');
+
+// Guides
+document.getElementById('guidesList').innerHTML = guides.map(g => `
+  <details class="bg-ink border border-white/10 rounded-xl p-5 hover:border-white/20 transition">
+    <summary class="flex items-center justify-between gap-4">
+      <span class="font-display font-semibold text-white">${g.title}</span>
+      <svg class="chev text-bolt flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+    </summary>
+    <div class="ans text-white/70 text-sm leading-relaxed">${g.content}</div>
+  </details>
+`).join('');
+
+// Dropdown services
+let activeService = services[0];
+const ddBtn = document.getElementById('ddBtn');
+const ddMenu = document.getElementById('ddMenu');
+const ddLabel = document.getElementById('ddLabel');
+const ddPrice = document.getElementById('ddPrice');
+const ddChev = document.getElementById('ddChev');
+
+ddMenu.innerHTML = services.map((s,i) => `
+  <button data-i="${i}" class="svcBtn w-full text-left px-4 py-3 hover:bg-white/5 border-b border-white/5 last:border-b-0 transition flex items-center gap-3">
+    <span class="w-9 h-9 rounded-lg bg-bolt/10 text-bolt grid place-items-center flex-shrink-0 text-base">${s.emoji.split('').slice(0,2).join('') || s.icon}</span>
+    <span class="flex-1 min-w-0">
+      <span class="block font-semibold text-white text-sm">${s.emoji} ${s.name}</span>
+      <span class="block text-xs text-white/50 truncate">${s.desc}</span>
+    </span>
+    <span class="text-bolt text-sm font-semibold whitespace-nowrap">${s.price}</span>
+  </button>
+`).join('');
+
+ddBtn.addEventListener('click', e => {
+  e.stopPropagation();
+  ddMenu.classList.toggle('hidden');
+  ddChev.classList.toggle('rot-180');
+});
+document.addEventListener('click', e => {
+  if (!ddMenu.contains(e.target) && e.target !== ddBtn) {
+    ddMenu.classList.add('hidden');
+    ddChev.classList.remove('rot-180');
+  }
+});
+document.querySelectorAll('.svcBtn').forEach(b => {
+  b.addEventListener('click', () => {
+    activeService = services[+b.dataset.i];
+    ddLabel.textContent = activeService.name;
+    ddPrice.textContent = activeService.price;
+    ddMenu.classList.add('hidden');
+    ddChev.classList.remove('rot-180');
+  });
+});
+
+// Mobile menu
+const mBtn = document.getElementById('mobileBtn');
+const mMenu = document.getElementById('mobileMenu');
+mBtn.addEventListener('click', () => mMenu.classList.toggle('hidden'));
+mMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mMenu.classList.add('hidden')));
+
+// ---------- WhatsApp send (sempre funzionante, anche senza GPS) ----------
+const WA_NUMBER = '393270447124';
+
+function openWhatsApp(text){
+  const encoded = encodeURIComponent(text);
+  // wa.me funziona su iOS, Android, desktop. api.whatsapp.com come fallback.
+  const url = `https://wa.me/${WA_NUMBER}?text=${encoded}`;
+  // Su iOS Safari window.open in async callback può essere bloccato → usiamo location.assign come fallback
+  const w = window.open(url, '_blank', 'noopener');
+  if (!w) window.location.href = url;
+}
+
+function buildMessage(coords){
+  const when = new Date().toLocaleString('it-IT');
+  const em = activeService.emoji || '🚨';
+  const tag = activeService.tag || 'INTERVENTO';
+  let msg = `🚨🆘 EMERGENZA BOOSTERMAN 🆘🚨\n${em} ${tag} ${em}\n━━━━━━━━━━━━━━\n\n📋 Servizio richiesto: ${em} ${activeService.name}\n💰 Tariffa: ${activeService.price}\n🕒 Orario richiesta: ${when}\n`;
+  if (coords) {
+    msg += `\n📍 La mia posizione GPS:\n👉 https://maps.google.com/?q=${coords.lat},${coords.lng}`;
+  } else {
+    msg += `\n📍 Posizione: (non condivisa — ti indico l'indirizzo qui in chat 👇)`;
+  }
+  msg += `\n\n⏱️ Vi aspetto, grazie! 🙏`;
+  return msg;
+}
+
+document.getElementById('sendBtn').addEventListener('click', () => {
+  const errEl = document.getElementById('locErr');
+  const okEl  = document.getElementById('locOk');
+  errEl.classList.add('hidden'); okEl.classList.add('hidden');
+
+  // Apri WhatsApp SUBITO con un messaggio base (evita popup-blocker iOS)
+  // poi se otteniamo il GPS aggiorniamo la pagina con stato.
+  if (!navigator.geolocation) {
+    openWhatsApp(buildMessage(null));
+    okEl.innerHTML = '✓ Apertura WhatsApp in corso… (posizione non disponibile)';
+    okEl.classList.remove('hidden');
+    return;
+  }
+
+  // Tentiamo GPS con timeout breve; in ogni caso inviamo.
+  let sent = false;
+  const sendOnce = (coords) => {
+    if (sent) return; sent = true;
+    openWhatsApp(buildMessage(coords));
+  };
+  const fallback = setTimeout(() => {
+    sendOnce(null);
+    okEl.innerHTML = '✓ Apertura WhatsApp in corso… (posizione non rilevata in tempo, indicala in chat)';
+    okEl.classList.remove('hidden');
+  }, 6000);
+
+  navigator.geolocation.getCurrentPosition(pos => {
+    clearTimeout(fallback);
+    const c = { lat: pos.coords.latitude.toFixed(5), lng: pos.coords.longitude.toFixed(5) };
+    sendOnce(c);
+    okEl.innerHTML = `✓ Posizione rilevata: <b>${c.lat}, ${c.lng}</b> — apertura WhatsApp…`;
+    okEl.classList.remove('hidden');
+  }, err => {
+    clearTimeout(fallback);
+    sendOnce(null);
+    let m = '✓ Apertura WhatsApp in corso… (indica l\'indirizzo in chat)';
+    if (err.code === err.PERMISSION_DENIED) m = '✓ Apertura WhatsApp in corso… (posizione non condivisa, indicala in chat)';
+    okEl.innerHTML = m;
+    okEl.classList.remove('hidden');
+  }, { enableHighAccuracy: true, timeout: 5500, maximumAge: 30000 });
+});
+
+// Nessun ETA simulato: la posizione dell'utente viene allegata al messaggio WhatsApp
+// (vedi openWhatsApp / buildMessage sopra) ma non vengono mostrati tempi di arrivo automatici.
+</script>
+
+<!-- Elfsight Google Reviews | Untitled Google Reviews -->
+<div class="elfsight-app-03999e65-3f59-436c-82b7-b0d092d20e1c" data-elfsight-app-lazy></div>
+
+<!-- SEO Keywords Section -->
+<section aria-label="Servizi e zone coperte" class="bg-ink border-t border-white/10 py-10 px-4 sm:px-6 lg:px-8">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-xl sm:text-2xl font-bold mb-4 text-white">Servizi Boosterman a Roma e provincia</h2>
+    <p class="text-sm text-white/70 mb-6">Tutte le parole chiave dei nostri interventi: scegli quello che ti serve.</p>
+    <div class="flex flex-wrap gap-2 text-xs">
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Avviamento batteria Roma</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Avviamento batteria a domicilio</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Sostituzione batteria auto</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Batteria scarica Roma</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Gomma forata a domicilio</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Gomma a terra Roma</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Cambio gomme a domicilio</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Soccorso stradale Roma</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Elettrauto H24 Roma</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Elettrauto a domicilio</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Pronto intervento auto Roma</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Meccanico a domicilio</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Auto non parte</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Batteria Start &amp; Stop</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Batteria AGM / EFB</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Avviamento SUV</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Avviamento furgoni</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Veicoli commerciali</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Riparazione pneumatici</span>
+      <span class="px-3 py-1 rounded-full bg-white/5 border border-white/10 text-white/80">Ruotino di scorta</span>
+    </div>
+
+    <h3 class="text-lg font-bold mt-8 mb-3 text-white">Dove interveniamo</h3>
+    <div class="flex flex-wrap gap-2 text-xs">
+      <span class="px-3 py-1 rounded-full bg-bolt/10 border border-bolt/30 text-bolt">Roma città</span>
+      <span class="px-3 py-1 rounded-full bg-bolt/10 border border-bolt/30 text-bolt">Roma provincia</span>
+      <span class="px-3 py-1 rounded-full bg-bolt/10 border border-bolt/30 text-bolt">GRA - Grande Raccordo Anulare</span>
+      <span class="px-3 py-1 rounded-full bg-bolt/10 border border-bolt/30 text-bolt">Aeroporto Fiumicino</span>
+      <span class="px-3 py-1 rounded-full bg-bolt/10 border border-bolt/30 text-bolt">Aeroporto Ciampino</span>
+      <span class="px-3 py-1 rounded-full bg-bolt/10 border border-bolt/30 text-bolt">Centri commerciali</span>
+      <span class="px-3 py-1 rounded-full bg-bolt/10 border border-bolt/30 text-bolt">Parcheggi</span>
+      <span class="px-3 py-1 rounded-full bg-bolt/10 border border-bolt/30 text-bolt">Uffici</span>
+      <span class="px-3 py-1 rounded-full bg-bolt/10 border border-bolt/30 text-bolt">Strade urbane ed extraurbane</span>
+      <span class="px-3 py-1 rounded-full bg-bolt/10 border border-bolt/30 text-bolt">Stazioni e hotel</span>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
