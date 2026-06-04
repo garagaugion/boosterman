@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://elettrautoh24roma.it/sitemap.xml
