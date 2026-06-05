@@ -26,9 +26,18 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
         data-boosterman-cta="whatsapp_footer"
-        style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '15px', color: '#25D366', marginBottom: '24px' }}
+        style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '15px', color: '#25D366', marginBottom: '12px' }}
       >
         💬 WhatsApp H24
+      </a>
+      <a
+        href="https://www.facebook.com/profile.php?id=100063653716764"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-boosterman-cta="facebook_footer"
+        style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '15px', color: '#1877F2', marginBottom: '24px' }}
+      >
+        📘 Seguici su Facebook
       </a>
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} BOOSTERMAN — Pronto Intervento Elettrauto Mobile H24 Roma</p>
