@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const SERVICES = [
-  { emoji: '⚡', name: 'Avviamento Batteria', desc: 'Jump start in 20-40 min', badge: 'H24', highlight: true },
+  { emoji: '⚡', name: 'Avviamento Batteria', desc: 'Colleghiamo il booster alla batteria e avviamo il veicolo in 20-40 min', badge: 'H24', highlight: true },
   { emoji: '🔋', name: 'Sostituzione Batteria', desc: 'Batterie originali a bordo', badge: 'H24', highlight: true },
   { emoji: '🛞', name: 'Gomma Forata', desc: 'Montiamo ruotino/scorta o ripariamo ove possibile', badge: 'H24', highlight: false },
   { emoji: '🔑', name: 'Apertura Porte', desc: 'Non distruttiva, senza danni', badge: 'H24', highlight: false },
@@ -79,8 +79,9 @@ export default function Home() {
         <EmergencyChatSection />
 
         <div className="hero-cta">
-          <a href="tel:+393270447124" className="btn-primary">
-            📞 Chiama ora H24
+          <a href="tel:+393270447124" className="btn-call">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white" style={{flexShrink:0}}><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            Chiama ora H24
           </a>
           <a
             href="https://wa.me/393270447124"
@@ -110,8 +111,9 @@ export default function Home() {
           ))}
         </div>
         <div style={{marginTop:'16px'}}>
-          <a href="tel:+393270447124" className="btn-primary">
-            📞 Chiama per un intervento
+          <a href="tel:+393270447124" className="btn-call">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white" style={{flexShrink:0}}><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            Chiama per un intervento
           </a>
         </div>
       </section>
@@ -162,7 +164,9 @@ export default function Home() {
               Tecnico operativo H24. Tempo medio di arrivo 20-40 minuti. Roma e provincia.
             </div>
           </div>
-          <a href="tel:+393270447124" className="btn-primary">📞 327 044 7124</a>
+          <a href="tel:+393270447124" className="btn-call">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white" style={{flexShrink:0}}><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+            327 044 7124
           <a
             href="https://wa.me/393270447124"
             target="_blank"
