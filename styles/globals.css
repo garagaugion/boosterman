@@ -12,7 +12,7 @@
   --gray: #888888;
   --gray2: #333333;
   --green: #22c55e;
-  --red: #ef4444;
+  --red: #B94040;
   --radius: 12px;
   --font-display: 'Barlow Condensed', sans-serif;
   --font-body: 'Barlow', sans-serif;
@@ -185,7 +185,7 @@ body.menu-open .chat-panel {
 .btn-primary:active { background: var(--yellow-dark); transform: scale(0.98); }
 
 .btn-call {
-  background: #CC3333;
+  background: #B94040;
   color: #ffffff;
   font-family: var(--font-display);
   font-weight: 800;
@@ -202,9 +202,9 @@ body.menu-open .chat-panel {
   transition: background 0.15s, transform 0.1s;
   min-height: 56px;
   width: 100%;
-  box-shadow: 0 4px 18px rgba(204,51,51,0.35);
+  box-shadow: 0 4px 18px rgba(185,64,64,0.28);
 }
-.btn-call:active { background: #A82828; transform: scale(0.98); }
+.btn-call:active { background: #9a3333; transform: scale(0.98); }
 
 .btn-whatsapp {
   background: #25D366;
@@ -358,6 +358,7 @@ body.menu-open .chat-panel {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-top: 20px;
 }
 
 /* ========== TICKER ========== */
@@ -813,7 +814,7 @@ body.menu-open .chat-panel {
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
 }
-.chat-action-call { background: #CC3333; color: #ffffff; }
+.chat-action-call { background: #B94040; color: #ffffff; }
 .chat-action-wa { background: #25D366; color: var(--white); }
 .chat-action-btn:active { opacity: 0.85; transform: scale(0.97); }
 
@@ -1077,15 +1078,15 @@ body.menu-open .chat-panel {
 /* ========== AGGIORNAMENTO CHAT MOBILE FULLSCREEN + SOS GPS ========== */
 .chat-option-sos,
 .chat-action-sos {
-  background: #CC3333 !important;
+  background: #B94040 !important;
   color: #fff !important;
   border-color: rgba(255,255,255,0.18) !important;
   font-weight: 900 !important;
-  box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 8px 24px rgba(204,51,51,0.32);
+  box-shadow: 0 0 0 1px rgba(255,255,255,0.08), 0 8px 24px rgba(185,64,64,0.28);
 }
 .chat-option-sos:active,
 .chat-action-sos:active {
-  background: #A82828 !important;
+  background: #9a3333 !important;
 }
 .chat-manual-address {
   background: rgba(255,255,255,0.045);
@@ -1204,12 +1205,12 @@ body.menu-open .chat-panel {
   width: 42px;
   height: 42px;
   border-radius: 14px;
-  background: #CC3333;
+  background: #B94040;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  box-shadow: 0 10px 28px rgba(204,51,51,0.32);
+  box-shadow: 0 10px 28px rgba(185,64,64,0.28);
 }
 .home-emergency-chat-kicker {
   color: var(--yellow);
@@ -1315,11 +1316,11 @@ body.menu-open .chat-panel {
   border-color: #25D366;
 }
 .home-sos-button {
-  background: #CC3333 !important;
+  background: #B94040 !important;
   border-color: rgba(255,255,255,0.18) !important;
   font-size: 19px !important;
   font-weight: 900 !important;
-  box-shadow: 0 10px 28px rgba(204,51,51,0.40);
+  box-shadow: 0 10px 28px rgba(185,64,64,0.32);
 }
 .home-sos-button:disabled {
   opacity: .75;
@@ -1375,7 +1376,7 @@ body.menu-open .chat-panel {
   width: 100%;
   padding: 16px;
   border-radius: 12px;
-  background: #CC3333;
+  background: #B94040;
   color: #fff;
   font-family: var(--font-display);
   font-weight: 900;
@@ -1384,9 +1385,9 @@ body.menu-open .chat-panel {
   border: none;
   cursor: pointer;
   transition: background 0.15s, transform 0.1s;
-  box-shadow: 0 4px 16px rgba(192,57,43,0.35);
+  box-shadow: 0 4px 16px rgba(185,64,64,0.28);
 }
-.chat-sos-main:active { background: #A82828; transform: scale(0.98); }
+.chat-sos-main:active { background: #9a3333; transform: scale(0.98); }
 .chat-sos-main:disabled { opacity: 0.7; cursor: wait; }
 .chat-sos-consent {
   font-size: 13px;
@@ -1417,7 +1418,7 @@ body.menu-open .chat-panel {
 
 .home-sos-main-btn {
   width: 100%;
-  background: #CC3333;
+  background: #B94040;
   border: none;
   border-radius: 18px;
   padding: 18px 20px;
@@ -1426,22 +1427,22 @@ body.menu-open .chat-panel {
   align-items: center;
   gap: 6px;
   cursor: pointer;
-  box-shadow: 0 6px 24px rgba(204,51,51,0.45);
+  box-shadow: 0 6px 24px rgba(185,64,64,0.32);
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
   transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
   animation: sos-pulse 2.4s ease-in-out infinite;
 }
 .home-sos-main-btn:active {
-  background: #A82828;
+  background: #9a3333;
   transform: scale(0.97);
-  box-shadow: 0 2px 10px rgba(204,51,51,0.3);
+  box-shadow: 0 2px 10px rgba(185,64,64,0.22);
   animation: none;
 }
 
 @keyframes sos-pulse {
-  0%, 100% { box-shadow: 0 6px 24px rgba(204,51,51,0.45); }
-  50%       { box-shadow: 0 6px 36px rgba(204,51,51,0.70); }
+  0%, 100% { box-shadow: 0 6px 24px rgba(185,64,64,0.32); }
+  50%       { box-shadow: 0 6px 36px rgba(185,64,64,0.55); }
 }
 
 .home-sos-icon {
@@ -1467,8 +1468,8 @@ body.menu-open .chat-panel {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: rgba(204,51,51,0.10);
-  border: 1px solid rgba(204,51,51,0.35);
+  background: rgba(185,64,64,0.10);
+  border: 1px solid rgba(185,64,64,0.30);
   border-radius: 18px;
   padding: 16px;
 }
@@ -1480,7 +1481,7 @@ body.menu-open .chat-panel {
 }
 .home-sos-confirm-btn {
   width: 100%;
-  background: #CC3333;
+  background: #B94040;
   color: #fff;
   border: none;
   border-radius: 14px;
@@ -1491,10 +1492,10 @@ body.menu-open .chat-panel {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
-  box-shadow: 0 4px 18px rgba(204,51,51,0.40);
+  box-shadow: 0 4px 18px rgba(185,64,64,0.32);
   transition: background 0.15s, transform 0.1s;
 }
-.home-sos-confirm-btn:active { background: #A82828; transform: scale(0.98); }
+.home-sos-confirm-btn:active { background: #9a3333; transform: scale(0.98); }
 .home-sos-confirm-btn:disabled { opacity: 0.75; cursor: wait; }
 
 .home-sos-cancel-btn {
@@ -1520,4 +1521,3 @@ body.menu-open .chat-panel {
   padding: 0 4px;
   margin: -2px 0 2px;
 }
-
