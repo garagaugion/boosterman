@@ -1,0 +1,28 @@
+{
+  "name": "boosterman",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "15.3.4",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "@vercel/speed-insights": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "15.3.4",
+    "typescript": "^5.6.3"
+  }
+}
