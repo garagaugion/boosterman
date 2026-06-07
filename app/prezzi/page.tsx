@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 const PRICES = [
   { service: 'Avviamento Batteria', note: 'Colleghiamo il booster e avviamo il tuo motore sul posto, senza carro attrezzi', price: 'da €39', priceMin: 39 },
-  { service: 'Sostituzione Batteria', note: 'Installiamo la batteria giusta per la tua auto. Costo totale comunicato prima dell'intervento, nessuna sorpresa.', price: 'da €49 + batteria', priceMin: 49 },
+  { service: 'Sostituzione Batteria', note: "Installiamo la batteria giusta per la tua auto. Costo totale comunicato prima dell'intervento, nessuna sorpresa.", price: 'da €49 + batteria', priceMin: 49 },
   { service: 'Apertura Porta', note: 'Non distruttiva, senza danni', price: 'da €79', priceMin: 79 },
   { service: 'Gomma Forata', note: 'Montiamo il tuo ruotino o la ruota di scorta. Quando possibile effettuiamo la riparazione sul posto', price: 'da €49', priceMin: 49 },
   { service: 'Diagnosi Elettronica', note: 'Lettura errori OBD2', price: 'da €49', priceMin: 49 },
