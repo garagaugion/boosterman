@@ -5,12 +5,12 @@ import StickyBar from '@/components/StickyBar';
 import ChatWidget from '@/components/ChatWidget';
 
 export const metadata: Metadata = {
-  title: 'Contatti Elettrauto H24 Roma | BOOSTERMAN — 327 044 7124',
-  description: 'Contatta BOOSTERMAN per un intervento H24 a Roma. Chiama il 327 044 7124 o scrivi su WhatsApp. Risposta immediata, intervento in 20-40 minuti.',
+  title: 'Contatti SOS Batterie & Assistenza Auto H24 Roma | BOOSTERMAN — +39 327 044 7124',
+  description: 'Contatta BOOSTERMAN per un intervento H24 a Roma. Chiama il +39 327 044 7124 o scrivi su WhatsApp. Risposta immediata, intervento in 20-40 minuti.',
   alternates: { canonical: 'https://www.elettrautoh24roma.it/contatti' },
   openGraph: {
-    title: 'Contatti | BOOSTERMAN Elettrauto H24 Roma',
-    description: 'Chiama o scrivi su WhatsApp: 327 044 7124. Risposta immediata H24. Elettrauto mobile Roma.',
+    title: 'Contatti | BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma',
+    description: 'Chiama o scrivi su WhatsApp: +39 327 044 7124. Risposta immediata H24. Elettrauto mobile Roma.',
     url: 'https://www.elettrautoh24roma.it/contatti',
     siteName: 'BOOSTERMAN',
     type: 'website',
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
 const contactSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  "name": "Contatti BOOSTERMAN Elettrauto H24 Roma",
+  "name": "Contatti BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma",
   "url": "https://www.elettrautoh24roma.it/contatti",
   "mainEntity": {
     "@type": "LocalBusiness",
-    "name": "BOOSTERMAN Elettrauto H24 Roma",
+    "name": "BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma",
     "telephone": "+393270447124",
     "url": "https://www.elettrautoh24roma.it",
     "contactPoint": {
@@ -58,14 +58,25 @@ export default function ContattiPage() {
       </div>
       <section className="section" style={{paddingTop:'16px'}}>
         <div style={{display:'flex',flexDirection:'column',gap:'12px',marginBottom:'32px'}}>
-          <a href="tel:+393270447124" className="btn-primary" style={{fontSize:'21px',padding:'20px'}}>📞 327 044 7124</a>
+          <a href="tel:+393270447124" className="btn-primary" style={{fontSize:'21px',padding:'20px'}}>📞 +39 327 044 7124</a>
           <a href="https://wa.me/393270447124" target="_blank" rel="noopener noreferrer" className="btn-whatsapp" style={{fontSize:'19px',padding:'18px'}}>💬 WhatsApp H24</a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100063653716764"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary"
+            data-boosterman-cta="facebook_contatti"
+            style={{fontSize:'18px',padding:'16px'}}
+          >
+            📘 Facebook BOOSTERMAN
+          </a>
         </div>
         <div style={{display:'flex',flexDirection:'column',gap:'12px',marginBottom:'32px'}}>
           {[
             {e:'🕐',t:'Orari',d:'24 ore su 24, 7 giorni su 7. Festivi e notti incluse. Nessuna eccezione.'},
             {e:'📍',t:'Area di servizio',d:'Roma e provincia. Per zone fuori Roma, contattaci per verificare la disponibilità.'},
             {e:'⏱',t:'Tempo di arrivo',d:'Mediamente 20-40 minuti dalla chiamata, a seconda della zona.'},
+            {e:'📘',t:'Facebook',d:'Seguici anche sulla pagina Facebook BOOSTERMAN per aggiornamenti e contatti rapidi.'},
             {e:'💰',t:'Pagamenti',d:'Contanti, carta di credito/debito, Satispay, PayPal.'},
           ].map(c => (
             <div key={c.t} className="info-card">

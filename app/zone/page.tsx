@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description: 'BOOSTERMAN interviene su tutta Roma e provincia: Parioli, EUR, Ostia, Trastevere, Tiburtina, Flaminio, Prati e molte altre zone. Elettrauto H24 a domicilio in 20-40 minuti.',
   alternates: { canonical: 'https://www.elettrautoh24roma.it/zone' },
   openGraph: {
-    title: 'Zone Coperte | BOOSTERMAN Elettrauto H24 Roma',
+    title: 'Zone Coperte | BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma',
     description: 'Interveniamo in tutta Roma e provincia: consulta le zone con pagine dedicate per Parioli, EUR, Ostia, Trastevere e molte altre.',
     url: 'https://www.elettrautoh24roma.it/zone',
     siteName: 'BOOSTERMAN',

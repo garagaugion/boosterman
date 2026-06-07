@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import StickyBar from '@/components/StickyBar';
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy | BOOSTERMAN Elettrauto H24 Roma',
+  title: 'Cookie Policy | BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma',
   description: 'Informativa sull\'utilizzo dei cookie sul sito BOOSTERMAN ai sensi del D.Lgs. 196/2003 e del Regolamento UE 2016/679.',
   alternates: { canonical: 'https://www.elettrautoh24roma.it/cookie' },
   robots: { index: false, follow: false },

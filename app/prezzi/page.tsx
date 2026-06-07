@@ -5,11 +5,11 @@ import StickyBar from '@/components/StickyBar';
 import ChatWidget from '@/components/ChatWidget';
 
 export const metadata: Metadata = {
-  title: 'Prezzi Elettrauto H24 Roma | BOOSTERMAN — Tariffe Trasparenti',
+  title: 'Prezzi SOS Batterie & Assistenza Auto H24 Roma | BOOSTERMAN — Tariffe Trasparenti',
   description: "Prezzi trasparenti per avviamento batteria da €39, sostituzione batteria da €49 più costo batteria, apertura veicolo, gomma forata e diagnosi elettronica a Roma. Preventivo gratuito prima dell'intervento.",
   alternates: { canonical: 'https://www.elettrautoh24roma.it/prezzi' },
   openGraph: {
-    title: 'Prezzi | BOOSTERMAN Elettrauto H24 Roma',
+    title: 'Prezzi | BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma',
     description: "Tariffe per batteria scarica, sostituzione batteria, apertura auto, gomma forata, diagnosi OBD2. Preventivo chiaro prima dell’intervento.",
     url: 'https://www.elettrautoh24roma.it/prezzi',
     siteName: 'BOOSTERMAN',
@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 };
 
 const PRICES = [
-  { service: 'Avviamento Batteria', note: 'Jump start sul posto per batteria scarica', price: 'da €39', priceMin: 39 },
-  { service: 'Sostituzione Batteria', note: 'Manodopera da €49 + costo batteria, sempre comunicato prima', price: 'da €49 + batteria', priceMin: 49 },
+  { service: 'Avviamento Batteria', note: 'Colleghiamo il booster e avviamo il tuo motore sul posto, senza carro attrezzi', price: 'da €39', priceMin: 39 },
+  { service: 'Sostituzione Batteria', note: 'Installiamo la batteria giusta per la tua auto. Costo totale comunicato prima dell'intervento, nessuna sorpresa.', price: 'da €49 + batteria', priceMin: 49 },
   { service: 'Apertura Porta', note: 'Non distruttiva, senza danni', price: 'da €79', priceMin: 79 },
   { service: 'Gomma Forata', note: 'Montiamo il tuo ruotino o la ruota di scorta. Quando possibile effettuiamo la riparazione sul posto', price: 'da €49', priceMin: 49 },
   { service: 'Diagnosi Elettronica', note: 'Lettura errori OBD2', price: 'da €49', priceMin: 49 },
@@ -36,7 +36,7 @@ const serviceSchema = {
   "name": "Elettrauto H24 Mobile Roma — BOOSTERMAN",
   "provider": {
     "@type": "LocalBusiness",
-    "name": "BOOSTERMAN Elettrauto H24 Roma",
+    "name": "BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma",
     "telephone": "+393270447124",
     "url": "https://www.elettrautoh24roma.it"
   },

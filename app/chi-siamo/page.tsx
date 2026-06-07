@@ -5,7 +5,7 @@ import StickyBar from '@/components/StickyBar';
 import ChatWidget from '@/components/ChatWidget';
 
 export const metadata: Metadata = {
-  title: 'Chi Siamo | BOOSTERMAN Elettrauto H24 Roma',
+  title: 'Chi Siamo | BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma',
   description: 'BOOSTERMAN è il servizio di elettrauto mobile H24 a Roma con oltre 10 anni di esperienza. Tecnici certificati, intervento rapido, prezzi trasparenti.',
 };
 

@@ -17,10 +17,8 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
 
-  // Chiudi menu al cambio pagina
   useEffect(() => { setOpen(false); }, [pathname]);
 
-  // Blocca scroll e nasconde CTA flottanti quando il menu è aperto
   useEffect(() => {
     if (open) {
       document.body.style.overflow = 'hidden';
@@ -29,7 +27,6 @@ export default function Header() {
       document.body.style.overflow = '';
       document.body.classList.remove('menu-open');
     }
-
     return () => {
       document.body.style.overflow = '';
       document.body.classList.remove('menu-open');
@@ -40,11 +37,12 @@ export default function Header() {
     <>
       <header className="header">
         <Link href="/" className="header-logo" onClick={() => setOpen(false)}>
-          ⚡ BOOSTERMAN
+          <span>⚡ BOOSTERMAN</span>
+          <span className="header-logo-tagline">SOS Batterie &amp; Assistenza Auto H24 · Roma</span>
         </Link>
         <div className="header-phone">
           <a href="tel:+393270447124" className="btn-call-header" data-boosterman-cta="phone_header">
-            📞 327 044 7124
+            📞 +39 327 044 7124
           </a>
           <button
             className={`hamburger ${open ? 'open' : ''}`}
@@ -69,8 +67,8 @@ export default function Header() {
           </Link>
         ))}
         <div className="mobile-menu-cta">
-          <a href="tel:+393270447124" className="btn-primary" data-boosterman-cta="phone_menu">
-            📞 Chiama ora H24
+          <a href="tel:+393270447124" className="btn-call" data-boosterman-cta="phone_menu">
+            📞 Chiama ora — H24 · 7/7
           </a>
           <a
             href="https://wa.me/393270447124"

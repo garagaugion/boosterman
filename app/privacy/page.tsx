@@ -4,7 +4,7 @@ import Footer from '@/components/Footer';
 import StickyBar from '@/components/StickyBar';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | BOOSTERMAN Elettrauto H24 Roma',
+  title: 'Privacy Policy | BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma',
   description: 'Informativa sul trattamento dei dati personali di BOOSTERMAN ai sensi del Regolamento UE 2016/679 (GDPR).',
   alternates: { canonical: 'https://www.elettrautoh24roma.it/privacy' },
   robots: { index: false, follow: false },

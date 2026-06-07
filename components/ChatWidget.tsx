@@ -98,7 +98,7 @@ export default function ChatWidget({ hideMobileFab = false }: { hideMobileFab?: 
 
   function openWhatsApp(message: string, action = 'whatsapp_chat') {
     trackBoostermanEvent(action);
-    window.open(`${WA_BASE}${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+    window.location.href = `${WA_BASE}${encodeURIComponent(message)}`;
   }
 
   function startProblem(key: string) {
@@ -160,7 +160,7 @@ ${address}`, 'whatsapp_manual_address');
         setLocationLoading(false);
         openWhatsApp(`🚨 SOS BOOSTERMAN\n\n${summaryText}\n\nHo premuto SOS ma non sono riuscito ad autorizzare la posizione GPS. Vi scrivo via e civico manualmente su WhatsApp.`, 'whatsapp_location_denied');
       },
-      { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 0 }
     );
   }
 
@@ -268,7 +268,7 @@ ${address}`, 'whatsapp_manual_address');
                 </button>
                 <button className="chat-option chat-option-sos" onClick={sendLocation} type="button" disabled={locationLoading}>
                   <span>🚨</span>
-                  {locationLoading ? 'Sto prendendo la posizione...' : 'SOS - Invia posizione GPS'}
+                  {locationLoading ? 'Sto rilevando la posizione GPS (max 20s)...' : 'SOS - Invia posizione GPS'}
                 </button>
                 <div className="chat-manual-address">
                   <label htmlFor="chat-address">Oppure inserisci via e civico manualmente</label>
@@ -297,7 +297,7 @@ ${address}`, 'whatsapp_manual_address');
 
         <div className="chat-actions-new">
           <button onClick={sendLocation} className="chat-sos-main" type="button" disabled={locationLoading}>
-            🚨 {locationLoading ? 'Rilevamento posizione...' : 'SOS — Invia posizione al tecnico'}
+            🚨 {locationLoading ? 'Rilevamento GPS (max 20s)...' : 'SOS — Invia posizione al tecnico'}
           </button>
           <p className="chat-sos-consent">Premendo accetti che la tua posizione GPS venga rilevata e condivisa con il tecnico via WhatsApp.</p>
           <button onClick={() => openWhatsApp(summaryText, 'whatsapp_chat_footer')} className="chat-wa-btn" type="button">

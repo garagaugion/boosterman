@@ -102,7 +102,7 @@ export default function EmergencyChatSection() {
 
   function openWhatsApp(message: string, action = 'whatsapp_home_chat') {
     trackBoostermanEvent(action);
-    window.open(`${WA_BASE}${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+    window.location.href = `${WA_BASE}${encodeURIComponent(message)}`;
   }
 
   function chooseProblem(key: ProblemKey) {
@@ -157,7 +157,7 @@ export default function EmergencyChatSection() {
           'home_chat_gps_denied'
         );
       },
-      { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 0 }
     );
   }
 
@@ -188,7 +188,7 @@ export default function EmergencyChatSection() {
           'home_chat_quick_sos_denied'
         );
       },
-      { enableHighAccuracy: true, timeout: 10000, maximumAge: 0 }
+      { enableHighAccuracy: true, timeout: 20000, maximumAge: 0 }
     );
   }
 
@@ -199,12 +199,22 @@ export default function EmergencyChatSection() {
         <div>
           <div className="home-emergency-chat-kicker">Assistente H24</div>
           <h2>Che emergenza hai?</h2>
-          <p>Scegli il problema o premi SOS per inviare subito la posizione al tecnico via WhatsApp.</p>
+          <p>Scegli il problema oppure usa il pulsante SOS sotto le opzioni per inviare subito la posizione al tecnico via WhatsApp.</p>
         </div>
       </div>
 
       {!current && (
         <>
+          {/* Scelta problema */}
+          <div className="home-emergency-options">
+            {(Object.keys(PROBLEMS) as ProblemKey[]).map((key) => (
+              <button key={key} type="button" onClick={() => chooseProblem(key)}>
+                <span>{PROBLEMS[key].emoji}</span>
+                {PROBLEMS[key].label}
+              </button>
+            ))}
+          </div>
+
           {/* Pulsante SOS principale */}
           <div className="home-sos-main-wrap">
             {!sosConfirmed ? (
@@ -228,7 +238,7 @@ export default function EmergencyChatSection() {
                   onClick={sendQuickSOS}
                   disabled={locationLoading}
                 >
-                  {locationLoading ? '📡 Sto rilevando la posizione...' : '🚨 Conferma SOS — Invia posizione'}
+                  {locationLoading ? '📡 Sto rilevando la posizione GPS (max 20s)...' : '🚨 Conferma SOS — Invia posizione'}
                 </button>
                 <button
                   type="button"
@@ -239,16 +249,6 @@ export default function EmergencyChatSection() {
                 </button>
               </div>
             )}
-          </div>
-
-          {/* Scelta problema */}
-          <div className="home-emergency-options">
-            {(Object.keys(PROBLEMS) as ProblemKey[]).map((key) => (
-              <button key={key} type="button" onClick={() => chooseProblem(key)}>
-                <span>{PROBLEMS[key].emoji}</span>
-                {PROBLEMS[key].label}
-              </button>
-            ))}
           </div>
         </>
       )}

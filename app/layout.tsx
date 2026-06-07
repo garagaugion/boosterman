@@ -1,18 +1,17 @@
 import type { Metadata } from 'next';
 import '../styles/globals.css';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.elettrautoh24roma.it'),
   title: {
-    default: 'BOOSTERMAN Elettrauto H24 Roma | Batteria Scarica, Apertura Veicolo e Diagnosi',
-    template: '%s | BOOSTERMAN Elettrauto H24 Roma',
+    default: 'BOOSTERMAN — SOS Batterie & Assistenza Auto H24 Roma | Pronto Intervento Mobile',
+    template: '%s | BOOSTERMAN SOS Batterie H24 Roma',
   },
-  description: 'Elettrauto H24 Roma. Assistenza auto a domicilio per batteria scarica, auto che non parte, apertura veicolo, gomma forata e diagnosi elettronica. Operativi 24 ore su 24 a Roma e provincia.',
-  keywords: ['elettrauto h24 roma', 'batteria scarica roma', 'apertura auto roma', 'soccorso stradale roma', 'gomma forata roma', 'diagnosi auto roma', 'elettrauto mobile roma'],
+  description: 'Batteria scarica? Auto bloccata? BOOSTERMAN: SOS Batterie & Assistenza Auto H24, 7 giorni su 7, festivi inclusi. Pronto Intervento Mobile a Roma e provincia. Avviamento, sostituzione batteria, gomma forata, apertura porte.',
+  keywords: ['sos batterie roma', 'batteria scarica roma', 'assistenza auto h24 roma', 'pronto intervento auto roma', 'apertura auto roma', 'gomma forata roma', 'elettrauto mobile roma h24', 'auto bloccata roma'],
   openGraph: {
-    title: 'BOOSTERMAN Elettrauto H24 Roma',
-    description: 'Pronto intervento elettrauto mobile H24. Batteria scarica, apertura veicolo, gomma forata. Roma e provincia.',
+    title: 'BOOSTERMAN — SOS Batterie & Assistenza Auto H24 Roma',
+    description: 'Batteria scarica? Auto bloccata? Pronto Intervento Mobile H24 · 7/7 · Festivi inclusi. Roma e provincia.',
     url: 'https://www.elettrautoh24roma.it',
     siteName: 'BOOSTERMAN',
     type: 'website',
@@ -20,8 +19,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'BOOSTERMAN Elettrauto H24 Roma',
-    description: 'Pronto intervento elettrauto mobile H24. Roma e provincia.',
+    title: 'BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma',
+    description: 'Pronto Intervento Mobile H24 · 7/7. Roma e provincia.',
   },
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://www.elettrautoh24roma.it' },
@@ -47,9 +46,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           gtag('js', new Date());
           gtag('config','AW-862362843');
 
+          // Tracking unico per CTA: Chiama, WhatsApp, GPS, chat.
+          // IMPORTANTE: sostituisci CONVERSION_LABEL con la label reale creata in Google Ads.
           var boostermanLastConversionAt = 0;
           window.boostermanTrack = function(action){
             try {
+              // Evita doppie conversioni se un click attiva sia onClick React sia il listener globale.
               var now = Date.now();
               if (now - boostermanLastConversionAt < 900) return;
               boostermanLastConversionAt = now;
@@ -83,8 +85,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "name": "BOOSTERMAN Elettrauto H24 Roma",
-          "description": "Pronto intervento elettrauto mobile H24. Batteria scarica, apertura veicolo, gomma forata. Roma e provincia.",
+          "name": "BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma",
+          "description": "Pronto Intervento Mobile H24 · 7/7. Batteria scarica, apertura veicolo, gomma forata. Roma e provincia.",
           "url": "https://www.elettrautoh24roma.it",
           "telephone": "+393270447124",
           "openingHoursSpecification": {
@@ -98,10 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "image": "https://www.elettrautoh24roma.it/og-image.png"
         })}} />
       </head>
-      <body>
-        {children}
-        <SpeedInsights />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

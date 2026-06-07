@@ -5,7 +5,7 @@ import StickyBar from '@/components/StickyBar';
 import ChatWidget from '@/components/ChatWidget';
 
 export const metadata: Metadata = {
-  title: 'Come Funziona | BOOSTERMAN Elettrauto H24 Roma',
+  title: 'Come Funziona | BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma',
   description: 'Come funziona il servizio BOOSTERMAN: chiama o scrivi su WhatsApp, il tecnico arriva in 20-40 minuti e risolve il problema sul posto. Preventivo prima dell\'intervento.',
 };
 
@@ -13,7 +13,7 @@ const STEPS = [
   {
     n: '1',
     title: 'Ci contatti',
-    desc: 'Chiama il 327 044 7124 o scrivi su WhatsApp descrivendo il problema e comunicando dove ti trovi. Rispondiamo H24.',
+    desc: 'Chiama il +39 327 044 7124 o scrivi su WhatsApp descrivendo il problema e comunicando dove ti trovi. Rispondiamo H24.',
     icon: '📞',
   },
   {

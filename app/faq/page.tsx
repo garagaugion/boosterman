@@ -15,7 +15,7 @@ const FAQS = [
   { q: 'Quali metodi di pagamento accettate?', a: "Accettiamo contanti, carta di credito/debito e pagamenti digitali (Satispay, PayPal). Chiedi al tecnico al momento dell'intervento." },
   { q: 'Le batterie che installate sono originali?', a: 'Installiamo batterie di qualità certificata, compatibili con il tuo veicolo. Il tipo e la garanzia vengono specificati nel preventivo.' },
   { q: 'Lavorate anche su furgoni e veicoli commerciali?', a: 'Sì, interveniamo su auto, SUV, furgoni e veicoli commerciali di ogni tipo.' },
-  { q: 'Come posso contattarvi?', a: 'Puoi chiamarci al 327 044 7124 oppure scriverci su WhatsApp allo stesso numero. Rispondiamo H24.' },
+  { q: 'Come posso contattarvi?', a: 'Puoi chiamarci al +39 327 044 7124 oppure scriverci su WhatsApp allo stesso numero. Rispondiamo H24.' },
 ];
 
 const faqSchema = {

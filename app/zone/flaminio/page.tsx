@@ -6,7 +6,7 @@ import ChatWidget from '@/components/ChatWidget';
 
 export const metadata: Metadata = {
   title: 'Elettrauto H24 Flaminio Roma | BOOSTERMAN - Pronto Intervento',
-  description: 'Elettrauto H24 a Flaminio. Batteria scarica, auto non parte, apertura porta, gomma forata: interveniamo in 20-40 minuti. Chiamaci ora: 327 044 7124.',
+  description: 'Elettrauto H24 a Flaminio. Batteria scarica, auto non parte, apertura porta, gomma forata: interveniamo in 20-40 minuti. Chiamaci ora: +39 327 044 7124.',
   alternates: { canonical: 'https://www.elettrautoh24roma.it/zone/flaminio' },
   openGraph: {
     title: 'Elettrauto H24 Flaminio | BOOSTERMAN Roma',
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
 const schemaData = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "BOOSTERMAN Elettrauto H24 Roma",
-  "description": "Pronto intervento elettrauto mobile H24 a Flaminio. Batteria scarica, apertura veicolo, gomma forata.",
+  "name": "BOOSTERMAN SOS Batterie & Assistenza Auto H24 Roma",
+  "description": "Pronto Intervento Mobile H24 · 7/7 a Flaminio. Batteria scarica, apertura veicolo, gomma forata.",
   "url": "https://www.elettrautoh24roma.it/zone/flaminio",
   "telephone": "+393270447124",
   "openingHoursSpecification": {
@@ -217,7 +217,7 @@ export default function ZonePage() {
 
         {/* CTA finale */}
         <div style={{display:'flex',flexDirection:'column',gap:'12px'}}>
-          <a href="tel:+393270447124" className="btn-primary">📞 327 044 7124 — H24</a>
+          <a href="tel:+393270447124" className="btn-primary">📞 +39 327 044 7124 — H24</a>
           <a href="/zone" className="btn-secondary">← Tutte le zone coperte</a>
         </div>
 
