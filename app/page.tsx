@@ -41,7 +41,7 @@ export default function Home() {
       <Header />
 
       {/* Ticker */}
-      <div className="ticker-wrap" style={{marginTop:'64px'}}>
+      <div className="ticker-wrap" style={{marginTop:'60px'}}>
         <div className="ticker-inner">
           {[...TICKER_ITEMS, ...TICKER_ITEMS].map((item, i) => (
             <span key={i} className="ticker-item">{item} •</span>
@@ -52,7 +52,7 @@ export default function Home() {
       {/* Hero */}
       <section className="hero">
         <div className="hero-bg" />
-        <div className="hero-badge">🟢 Operativi ora — Festivi inclusi</div>
+        <div className="hero-badge">● Operativi ora · Festivi inclusi</div>
         <h1>
           SOS<br />
           Batterie<br />

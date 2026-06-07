@@ -44,38 +44,34 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255,214,0,0.2);
-  padding: 0 16px;
-  height: 64px;
+  padding: 0 12px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
 }
 
 .header-logo {
   font-family: var(--font-display);
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 900;
   letter-spacing: 1px;
   color: var(--yellow);
   display: flex;
-  flex-direction: column;
-  gap: 1px;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.header-logo-tagline {
-  font-family: var(--font-body);
-  font-size: 10px;
-  font-weight: 600;
-  color: #c8c8c8;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  line-height: 1;
-}
+.header-logo-tagline { display: none; }
 
 .header-phone {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  flex-shrink: 0;
 }
 
 .btn-call-header {
@@ -122,12 +118,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 /* ========== MOBILE MENU ========== */
 .mobile-menu {
   position: fixed;
-  top: 64px;
+  top: 60px;
   left: 0;
   right: 0;
   bottom: 0;
   width: 100vw;
-  height: calc(100svh - 64px);
+  height: calc(100svh - 60px);
   background: #000;
   z-index: 99999;
   transform: translateX(100%);
@@ -281,8 +277,8 @@ body.menu-open .chat-panel {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 84px 20px 130px;
+  justify-content: flex-start;
+  padding: 76px 20px 120px;
   position: relative;
   overflow: hidden;
 }
@@ -306,16 +302,8 @@ body.menu-open .chat-panel {
   font-weight: 700;
   padding: 7px 14px;
   border-radius: 100px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   width: fit-content;
-}
-.hero-badge::before {
-  content: '';
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #4ade80;
-  animation: pulse 2s infinite;
 }
 @keyframes pulse {
   0%,100% { opacity:1; transform:scale(1); }
@@ -1035,8 +1023,8 @@ body.menu-open .chat-panel {
 }
 
 @media (min-width: 768px) {
-  .header { height: 68px; }
-  .mobile-menu { top: 68px; height: calc(100svh - 68px); }
+  .header { height: 60px; }
+  .mobile-menu { top: 60px; height: calc(100svh - 60px); }
   .hero { padding: 120px 40px 140px; max-width: 600px; }
   .section { padding: 80px 40px; max-width: 800px; margin: 0 auto; }
   .sticky-bar { display: none; }
