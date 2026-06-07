@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import '../styles/globals.css';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.elettrautoh24roma.it'),
@@ -46,12 +47,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           gtag('js', new Date());
           gtag('config','AW-862362843');
 
-          // Tracking unico per CTA: Chiama, WhatsApp, GPS, chat.
-          // IMPORTANTE: sostituisci CONVERSION_LABEL con la label reale creata in Google Ads.
           var boostermanLastConversionAt = 0;
           window.boostermanTrack = function(action){
             try {
-              // Evita doppie conversioni se un click attiva sia onClick React sia il listener globale.
               var now = Date.now();
               if (now - boostermanLastConversionAt < 900) return;
               boostermanLastConversionAt = now;
@@ -100,7 +98,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           "image": "https://www.elettrautoh24roma.it/og-image.png"
         })}} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }

@@ -2,9 +2,8 @@
   "name": "boosterman",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@9.0.0",
   "engines": {
-    "node": "24.x"
+    "node": "20.x"
   },
   "scripts": {
     "dev": "next dev",
@@ -15,7 +14,8 @@
   "dependencies": {
     "next": "15.3.4",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "@vercel/speed-insights": "latest"
   },
   "devDependencies": {
     "@types/node": "^22.10.2",
