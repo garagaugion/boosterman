@@ -36,31 +36,32 @@ export default function Header() {
   return (
     <>
       <header className="header">
-        <Link href="/" className="header-logo" onClick={() => setOpen(false)}>
-          <span>⚡ BOOSTERMAN</span>
-          <span className="header-logo-tagline">SOS Batterie &amp; Assistenza Auto H24 · Roma</span>
+        <Link href="/" className="header-logo" onClick={() => setOpen(false)} aria-label="BOOSTERMAN Home">
+          <span className="header-brand-word">BOOSTERMAN<span className="header-bolt">⚡</span></span>
+          <span className="header-logo-tagline">Elettrauto H24 <b>Roma</b></span>
         </Link>
+
         <div className="header-phone">
           <a href="tel:+393270447124" className="btn-call-header" data-boosterman-cta="phone_header">
-            📞 +39 327 044 7124
+            <span className="header-phone-icon">☎</span>
+            <span>+39 327 044 7124</span>
           </a>
           <button
             className={`hamburger ${open ? 'open' : ''}`}
             onClick={() => setOpen(!open)}
             aria-label={open ? 'Chiudi menu' : 'Apri menu'}
             aria-expanded={open}
+            type="button"
           >
             <span />
             <span />
             <span />
+            <em>Menu</em>
           </button>
         </div>
       </header>
 
-      <nav
-        className={`mobile-menu ${open ? 'open' : ''}`}
-        aria-hidden={!open}
-      >
+      <nav className={`mobile-menu ${open ? 'open' : ''}`} aria-hidden={!open}>
         {NAV.map(({ href, label, emoji }) => (
           <Link key={href} href={href} onClick={() => setOpen(false)}>
             <span>{emoji}</span> {label}
