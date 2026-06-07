@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 import '../styles/globals.css';
 
 export const metadata: Metadata = {
@@ -65,9 +64,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
-        <SpeedInsights />
-
-        {/* Google Ads — caricato dopo l'interazione utente, non blocca il rendering */}
+{/* Google Ads — caricato dopo l'interazione utente, non blocca il rendering */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-862362843"
           strategy="afterInteractive"
