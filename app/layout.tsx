@@ -67,9 +67,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <CookieBanner />
 
-        {/* Google Ads — Consent Mode V2 */}
+        {/* Google Analytics GA4 + Google Ads — Consent Mode V2 */}
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-862362843"
+          src="https://www.googletagmanager.com/gtag/js?id=G-0Q72TPTVJ1"
           strategy="afterInteractive"
         />
         <Script
@@ -90,9 +90,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               });
 
               gtag('js', new Date());
+              gtag('config','G-0Q72TPTVJ1');
               gtag('config','AW-862362843');
 
-              // Tracking click telefono
+              // Tracking click telefono / WhatsApp
               var boostermanLastConversionAt = 0;
               window.boostermanTrack = function(action){
                 try {
