@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Script from 'next/script';
 import '../styles/globals.css';
+import CookieBanner from '../components/CookieBanner';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.elettrautoh24roma.it'),
@@ -64,7 +65,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body>
         {children}
-{/* Google Ads — caricato dopo l'interazione utente, non blocca il rendering */}
+        <CookieBanner />
+
+        {/* Google Ads — Consent Mode V2 */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-862362843"
           strategy="afterInteractive"
@@ -76,10 +79,20 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
-              gtag('consent','default',{ad_storage:'denied',analytics_storage:'denied'});
+
+              // Consent Mode V2 — default negato, aggiornato dal banner
+              gtag('consent','default',{
+                ad_storage: 'denied',
+                analytics_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+                wait_for_update: 2000
+              });
+
               gtag('js', new Date());
               gtag('config','AW-862362843');
 
+              // Tracking click telefono
               var boostermanLastConversionAt = 0;
               window.boostermanTrack = function(action){
                 try {
